@@ -1,10 +1,14 @@
 import React from 'react';
+import Calculator from './components/Calculator';
 
-function App() {
-  return (
-    <div>
-      <h1>Hello React</h1>
-    </div>
-  );
+class App extends React.PureComponent {
+  render() {
+    return (
+      <div>
+        <h1>Math Magicians</h1>
+        <Calculator />
+      </div>
+    );
+  }
 }
 export default App;
