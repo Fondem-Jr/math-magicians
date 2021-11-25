@@ -29,13 +29,14 @@ body {
 }
 
 input {
-  height: 75px;
+  height: 50px;
   width: 249px;
   background-color: rgb(175, 170, 170);
   color: white;
   text-align: right;
   font-weight: 500;
   letter-spacing: 1px;
+  border: none;
 }
 
 #zero {
@@ -44,4 +45,32 @@ input {
 
 .symbol {
   background-color: orange;
+}
+
+.calc-screen {
+  margin: 0;
+  height: 50px;
+  background-color: rgb(175, 170, 170);
+  text-align: end;
+  padding: 10px 10px;
+  font-weight: 400;
+  cursor: auto;
+  color: white;
+}
+
+button {
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #262834;
+  color: #fff;
+  font-weight: 500;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
 }
