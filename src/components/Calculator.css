@@ -20,6 +20,7 @@ body {
   text-align: center;
   border: 10px solid black;
   border-radius: 5px;
+  background-color: black;
 }
 
 .keypad {
@@ -31,7 +32,7 @@ body {
 input {
   height: 50px;
   width: 249px;
-  background-color: rgb(175, 170, 170);
+  background-color: black;
   color: white;
   text-align: right;
   font-weight: 500;
@@ -50,7 +51,6 @@ input {
 .calc-screen {
   margin: 0;
   height: 50px;
-  background-color: rgb(175, 170, 170);
   text-align: end;
   padding: 10px 10px;
   font-weight: 400;
