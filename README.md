@@ -5,6 +5,8 @@
 - Make simple calculations.
 - Read a random math-related quote.
 By building this application, you will learn how to use React.
+
+![screenshot](./src/components/assets/mathmagicians.jpeg)
 ## Built With 🔨
 
 - React
