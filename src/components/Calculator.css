@@ -7,14 +7,16 @@
 
 body {
   background-color: aquamarine;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
 }
 
 .container {
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 70%;
+  width: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -31,7 +33,7 @@ body {
 
 input {
   height: 50px;
-  width: 249px;
+  width: 100%;
   background-color: black;
   color: white;
   text-align: right;
@@ -73,4 +75,28 @@ input:active,
 button:focus,
 button:active {
   outline: none;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding-top: 8%;
+}
+
+.active-link {
+  color: orangered;
+  text-decoration: underline;
+}
+
+.header-nav {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #f3f3f3;
+}
+
+.header1{
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
