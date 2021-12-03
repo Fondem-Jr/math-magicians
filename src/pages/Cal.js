@@ -4,11 +4,11 @@ import Calculator from '../components/Calculator';
 
 const Cal = () => {
   return (
-    <div>
+    <div className="cal-container">
       <div>
       <p>Lets do some math!</p>
     </div>
-    <div>
+    <div className="cal-display">
       <Calculator />
     </div>
     </div>
