@@ -10,8 +10,8 @@ const initialState = {
 
 const Calculator = () => {
   const [obj, setObj] = useState(initialState);
-  const onKeyPressed = (obj, buttonName) => {
-    const newObj = calculate(obj, buttonName);
+  const onKeyPressed = (obj, btnName) => {
+    const newObj = calculate(obj, btnName);
     if (!newObj.next && !newObj.total) {
       newObj.next = 0;
     }
@@ -20,9 +20,9 @@ const Calculator = () => {
   return (
     <div className="container">
       <p className="calc-screen">
+        {obj.total}
         {obj.operation}
         {obj.next}
-        {obj.total}
       </p>
       <div className="keypad">
         <button onClick={() => onKeyPressed(obj, 'AC')} type="button">AC</button>
