@@ -18,35 +18,32 @@ const Calculator = () => {
     setObj(newObj);
   };
   return (
-
     <div className="container">
       <p className="calc-screen">
         {obj.operation}
         {obj.next}
+        {obj.total}
       </p>
-      <form>
-        <input type="text" placeholder="0" value={obj.total} />
-      </form>
       <div className="keypad">
-        <button onClick={() => onKeyPressed(obj, 'AC')} type="button" buttonName="AC">AC</button>
-        <button onClick={() => onKeyPressed(obj, '+/-')} type="button" buttonName="+/-">+/-</button>
-        <button onClick={() => onKeyPressed(obj, '%')} type="button" buttonName="%">%</button>
-        <button onClick={() => onKeyPressed(obj, '÷')} type="button" className="symbol" buttonName="÷">÷</button>
-        <button onClick={() => onKeyPressed(obj, '7')} type="button" buttonName="7">7</button>
-        <button onClick={() => onKeyPressed(obj, '8')} type="button" buttonName="8">8</button>
-        <button onClick={() => onKeyPressed(obj, '9')} type="button" buttonName="9">9</button>
-        <button onClick={() => onKeyPressed(obj, 'x')} type="button" className="symbol" buttonName="x">x</button>
-        <button onClick={() => onKeyPressed(obj, '4')} type="button" buttonName="4">4</button>
-        <button onClick={() => onKeyPressed(obj, '5')} type="button" buttonName="5">5</button>
-        <button onClick={() => onKeyPressed(obj, '6')} type="button" buttonName="6">6</button>
-        <button onClick={() => onKeyPressed(obj, '-')} type="button" className="symbol" buttonName="-">-</button>
-        <button onClick={() => onKeyPressed(obj, '1')} type="button" buttonName="1">1</button>
-        <button onClick={() => onKeyPressed(obj, '2')} type="button" buttonName="2">2</button>
-        <button onClick={() => onKeyPressed(obj, '3')} type="button" buttonName="3">3</button>
-        <button onClick={() => onKeyPressed(obj, '+')} type="button" className="symbol" buttonName="+">+</button>
-        <button onClick={() => onKeyPressed(obj, '0')} type="button" id="zero" buttonName="0">0</button>
-        <button onClick={() => onKeyPressed(obj, '.')} type="button" buttonName=".">.</button>
-        <button onClick={() => onKeyPressed(obj, '=')} type="button" className="symbol" buttonName="=">=</button>
+        <button onClick={() => onKeyPressed(obj, 'AC')} type="button">AC</button>
+        <button onClick={() => onKeyPressed(obj, '+/-')} type="button">+/-</button>
+        <button onClick={() => onKeyPressed(obj, '%')} type="button">%</button>
+        <button onClick={() => onKeyPressed(obj, '÷')} type="button" className="symbol">÷</button>
+        <button onClick={() => onKeyPressed(obj, '7')} type="button">7</button>
+        <button onClick={() => onKeyPressed(obj, '8')} type="button">8</button>
+        <button onClick={() => onKeyPressed(obj, '9')} type="button">9</button>
+        <button onClick={() => onKeyPressed(obj, 'x')} type="button" className="symbol">x</button>
+        <button onClick={() => onKeyPressed(obj, '4')} type="button">4</button>
+        <button onClick={() => onKeyPressed(obj, '5')} type="button">5</button>
+        <button onClick={() => onKeyPressed(obj, '6')} type="button">6</button>
+        <button onClick={() => onKeyPressed(obj, '-')} type="button" className="symbol">-</button>
+        <button onClick={() => onKeyPressed(obj, '1')} type="button">1</button>
+        <button onClick={() => onKeyPressed(obj, '2')} type="button">2</button>
+        <button onClick={() => onKeyPressed(obj, '3')} type="button">3</button>
+        <button onClick={() => onKeyPressed(obj, '+')} type="button" className="symbol">+</button>
+        <button onClick={() => onKeyPressed(obj, '0')} type="button" id="zero">0</button>
+        <button onClick={() => onKeyPressed(obj, '.')} type="button">.</button>
+        <button onClick={() => onKeyPressed(obj, '=')} type="button" className="symbol">=</button>
       </div>
     </div>
   );
