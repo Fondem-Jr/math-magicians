@@ -14,8 +14,6 @@ h1 {
 }
 
 .container {
-  /* max-width: 50%;
-  min-width: 30%; */
   text-align: center;
   border: 10px solid black;
   border-radius: 5px;
