@@ -14,7 +14,9 @@ By building this application, you will learn how to use React.
 - Git & Github
 ## Live Demo
 
+[Heroku](https://mathmag.herokuapp.com/)
 [Netlify](https://confident-kilby-c02203.netlify.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
